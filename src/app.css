@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+}
+
+.others {
+  flex: 4; /* 4 unit space (4 times bigger) */
+  background-color: #555;
+}
+ 
