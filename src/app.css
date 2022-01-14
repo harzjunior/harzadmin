@@ -1,9 +1,4 @@
 .container {
   display: flex;
+  margin-top: 10px;
 }
-
-.others {
-  flex: 4; /* 4 unit space (4 times bigger) */
-  background-color: #555;
-}
- 
