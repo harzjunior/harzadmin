@@ -4,4 +4,67 @@
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
   padding: 20px;
- }
+}
+.widget__large-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.widget__large-table {
+  width: 100%;
+  border-spacing: 20px; /* space between cells */
+}
+
+.widget__large-th {
+  /* font-size: 16px;  */
+  font-weight: 600;
+  text-align: left;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* date and amount */
+.widget__large-date,
+.widget__large-amount {
+  font-weight: 300;
+  color: #8e8e8e;
+}
+
+.widget__large-user {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.widget__large-image {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.widget__small-btn {
+  list-style: none;
+  padding: 5px 7px;
+  border-radius: 10px;
+}
+
+/* if widget__small-btn approved */
+.widget__small-btn.Approved {
+  background-color: #e5faf2;
+  color: #3bb077;
+}
+
+/* if widget__small-btn Declined */
+.widget__small-btn.Declined {
+  background-color: #fff0f1;
+  color: #d95087;
+}
+
+/* if widget__small-btn Pending */
+.widget__small-btn.Pending {
+  background-color: #ebf1f2;
+  color: #2a7ade;
+}
