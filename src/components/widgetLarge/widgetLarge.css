@@ -3,7 +3,7 @@
   /* box-shadow generator https://html-css-js.com/css/generator/box-shadow/ */
   -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0, 0.75);
   box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
-  padding: 20px;
+  padding: 0px 20px;
 }
 .widget__large-title {
   font-size: 22px;
@@ -19,7 +19,7 @@
   /* font-size: 16px;  */
   font-weight: 600;
   text-align: left;
-  padding: 10px;
+  /* padding: 0px 10px; */
   border-bottom: 1px solid #e0e0e0;
 }
 
