@@ -60,7 +60,8 @@ export default function UserList() {
         return (
           <>
             {/* create a link button that links to user page with their ID inlcuded */}
-            <Link to={"/user/" + params.row.id} className="btn btn-link">
+            {/* add userId and the end of the page Link to user page (from the App component) */}
+            <Link to={"/user/" + params.row.id} className="btn-link">
               <button className="user__list-edit ">Edit</button>
             </Link>
             <DeleteOutline
