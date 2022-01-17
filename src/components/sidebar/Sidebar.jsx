@@ -13,7 +13,7 @@ import {
   AttachMoney,
   BarChart,
 } from "@material-ui/icons";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -22,11 +22,11 @@ export default function Sidebar() {
         <div className="sidebar__menu">
           <h3 className="sidebar__title">Dashboard </h3>
           <ul className="sidebar__list">
-            <li className="sidebar__list-items active">
-              {/* <Link to="/" className="btn-link"> */}
-              <LineStyle className="sidebar__icon" /> Home
-              {/* </Link> */}
-            </li>
+            <Link to="/" className="btn-link">
+              <li className="sidebar__list-items active">
+                <LineStyle className="sidebar__icon" /> Home
+              </li>
+            </Link>
             <li className="sidebar__list-items">
               <Timeline className="sidebar__icon" /> Analytics
             </li>
@@ -39,15 +39,17 @@ export default function Sidebar() {
         <div className="sidebar__menu">
           <h3 className="sidebar__title">Quick Menu </h3>
           <ul className="sidebar__list">
-            <li className="sidebar__list-items ">
-              {/* <Link to="/users" className="btn-link"> */}
-              <PermIdentity className="sidebar__icon" /> Users
-              {/* </Link> */}
-            </li>
-
-            <li className="sidebar__list-items">
-              <Storefront className="sidebar__icon" /> Products
-            </li>
+          {/* btn-link will be styled in app.css */}
+            <Link to="/users" className="btn-link">
+              <li className="sidebar__list-items ">
+                <PermIdentity className="sidebar__icon" /> Users
+              </li>
+            </Link>
+            <Link to="/products" className="btn-link">
+              <li className="sidebar__list-items">
+                <Storefront className="sidebar__icon" /> Products
+              </li>
+            </Link>
             <li className="sidebar__list-items">
               <AttachMoney className="sidebar__icon" /> Transactions
             </li>

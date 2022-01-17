@@ -18,7 +18,7 @@ export default function UserList() {
     {
       field: "user",
       headerName: "User",
-      width: 150,
+      width: 190,
       renderCell: (params) => {
         return (
           <div className="user__list-user">
@@ -37,7 +37,7 @@ export default function UserList() {
     {
       field: "email",
       headerName: "Email",
-      width: 170,
+      width: 200,
     },
     // email colmun
     {

@@ -2,3 +2,8 @@
   display: flex;
   margin-top: 10px;
 }
+
+.btn-link {
+  color: inherit; /* inherit color from parent element */
+  text-decoration: none;
+}
