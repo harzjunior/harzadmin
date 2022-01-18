@@ -2,6 +2,7 @@ import "./product.css";
 import { Link } from "react-router-dom";
 import Chart from "../../components/charts/Chart";
 import { productData } from "../../dummyData";
+import { Publish } from "@material-ui/icons";
 
 export default function Product() {
   return (
@@ -67,7 +68,40 @@ export default function Product() {
 
       {/* product bottom */}
       <div className="product__bottom">
-        <div className="product__bottom-left"></div>
+        <form className="product__form">
+          {/* infor section */}
+          <div className="product__form-left">
+            <label> Product Name</label>
+            <input type="text" placeholder="Apple Mabook Air 12 inches" />
+            <label>In Stock</label>
+            <select name="inStock" id="stockme">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+
+            <label>Active</label>
+            <select name="isActive" id="activeme">
+              <option value="active">Active</option>
+              <option value="inactive">Inactive</option>
+            </select>
+          </div>
+
+          {/* image upload section */}
+          <div className="product__form-right">
+            <div className="product__upload">
+              <img
+                src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/rfb-macbook-gold-select-201901?wid=4000&hei=3072&fmt=jpeg&qlt=95&.v=1546549130208"
+                alt="product"
+                className="product__upload-image"
+              />
+              <label htmlFor="fileme" className="product__upload-label">
+                <Publish />
+                <input type="file" id="fileme" style={{ display: "none" }} />
+              </label>
+            </div>
+            <button className="product__btn">Update</button>
+          </div>
+        </form>
       </div>
     </div>
   );
